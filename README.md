@@ -1,8 +1,8 @@
 # SwiftKeychain
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+> Swift wrapper for working with the Keychain API implemented with protocol oriented programming.
 
 ## Abstract
-Swift wrapper for working with the Keychain API implemented with Protocol Oriented Programming.
 
 You create an implementation of the `KeychainGenericPasswordType` protocol that encapsulates the data that you want to store in the `Keychain`. Most of the implementation is done for you by using default protocol implementations, such as setting the default service name and access mode (`kSecAttrAccessibleWhenUnlocked`).
 
