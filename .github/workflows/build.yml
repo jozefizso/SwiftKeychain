@@ -43,6 +43,12 @@ jobs:
     - name: swift version
       run: swift --version
 
+    - name: swiftlint version
+      run: swiftlint --version
+
+    - name: lint
+      run: swiftlint lint --reporter github-actions-logging
+
     - name: build
       run: swift build -v
 

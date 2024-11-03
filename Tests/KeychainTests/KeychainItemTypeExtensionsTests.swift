@@ -109,7 +109,6 @@ class KeychainItemTypeExtensionsTests: XCTestCase {
         XCTAssertNil(data, "Should return nil if the data is not a dictionary")
     }
     
-    
     func testAttributesForFetch() {
         
         let item = MockKeychainItem()
