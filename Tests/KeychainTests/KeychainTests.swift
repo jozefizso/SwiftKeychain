@@ -23,7 +23,7 @@ class KeychainTests: XCTestCase {
     
     func testInsertItemWithAttributes() {
         
-        let item = MockGenericPasswordItem(accountName: "John")
+        let item = MockGenericPasswordItem(accountName: "John_insertItemTest")
         let keychain = Keychain()
         var hasError = false
         
@@ -59,7 +59,7 @@ class KeychainTests: XCTestCase {
     
     func testRemoveItemWithAttributes() throws {
         
-        let item = MockGenericPasswordItem(accountName: "John")
+        let item = MockGenericPasswordItem(accountName: "John_removeItemTest")
         let keychain = Keychain()
         var hasError = false
         
@@ -97,7 +97,7 @@ class KeychainTests: XCTestCase {
     
     func testFetchItemWithAttributes() {
         
-        let item = MockGenericPasswordItem(accountName: "John")
+        let item = MockGenericPasswordItem(accountName: "John_fetchItemTest")
         let keychain = Keychain()
         var hasError = false
         var fetchedToken = ""
@@ -143,7 +143,7 @@ class KeychainTests: XCTestCase {
     
     func testFetchItemWithAttributesReturnsNilIfResultIsNotADictionary() {
         
-        let item = MockGenericPasswordItem(accountName: "John")
+        let item = MockGenericPasswordItem(accountName: "John_fetchItemWithAttributesTest")
         let keychain = Keychain()
         
         try! keychain.insertItemWithAttributes(item.attributes)
