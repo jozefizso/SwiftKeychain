@@ -57,13 +57,13 @@ class KeychainTests: XCTestCase {
         XCTAssertEqual(hasError, true, "Should throw error when the operation fails")
     }
     
-    func testRemoveItemWithAttributes() {
+    func testRemoveItemWithAttributes() throws {
         
         let item = MockGenericPasswordItem(accountName: "John")
         let keychain = Keychain()
         var hasError = false
         
-        try! keychain.insertItemWithAttributes(item.attributes)
+        try keychain.insertItemWithAttributes(item.attributes)
         
         do {
         
