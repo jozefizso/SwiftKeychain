@@ -75,7 +75,7 @@ do {
 ```
 
 ## Installation
-SwiftKeychain requires Swift 3.0 and Xcode 8 and supports iOS, OS X, watchOS and tvOS.
+SwiftKeychain requires Swift 5.9 or Swift 6 and supports macOS, iOS, watchOS, tvOS and visionOS.
 
 #### Manually
 Copy the `Keychain/Keychain.swift` file to your project.
